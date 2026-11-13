@@ -6,7 +6,7 @@
 <title>Champán en Nochebuena · Investigación de Mercados 2026</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#020a05;--g:#2be07f;--g2:#00b35c;--gl:#9dffc6;--cream:#ecf7f0;--dim:#b3cdbd;--rgb:43,224,127}
+:root{--bg:#fffaf0;--g:#c0273b;--g2:#e0a937;--gl:#2e8b57;--cream:#1d3a2b;--dim:#52665a;--rgb:192,39,59;--red:#c0273b}
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--cream);overflow:hidden;height:100vh;width:100vw}
 #pb{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--g),var(--gl));transition:width .4s;z-index:100}
@@ -33,14 +33,14 @@ strong{color:var(--cream);font-weight:500}
 .w{width:100%;max-width:1080px}
 .g2{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem;width:100%;max-width:1080px;align-items:start}
 .g3{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;width:100%;max-width:1080px}
-.card{background:rgba(10,32,20,.75);border:1px solid rgba(var(--rgb),.2);border-radius:12px;padding:1.1rem 1.3rem}
+.card{background:rgba(255,255,255,.88);box-shadow:0 6px 18px rgba(120,60,40,.1);border:1px solid rgba(var(--rgb),.22);border-radius:12px;padding:1.1rem 1.3rem}
 .ct{font:.66rem 'DM Mono',monospace;letter-spacing:.14em;color:var(--g);text-transform:uppercase;margin-bottom:.6rem;display:flex;align-items:center;gap:.5rem}
 .ct::before{content:'';width:16px;height:1px;background:var(--g)}
 .hl{border-left:3px solid var(--g);background:rgba(var(--rgb),.07);border-radius:0 8px 8px 0;padding:.8rem 1.1rem;margin-top:1rem}
 .hl p{color:var(--cream);font-style:italic}
 table{width:100%;border-collapse:collapse;font-size:clamp(.72rem,1.1vw,.84rem)}
 th{font:.64rem 'DM Mono',monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--g);border-bottom:1px solid rgba(var(--rgb),.3);padding:.5rem .6rem;text-align:left}
-td{padding:.5rem .6rem;border-bottom:1px solid rgba(255,255,255,.06);color:var(--dim);vertical-align:top}
+td{padding:.5rem .6rem;border-bottom:1px solid rgba(0,0,0,.09);color:var(--dim);vertical-align:top}
 td:first-child{color:var(--cream);font-weight:500}
 tr:last-child td{border-bottom:none}
 .bd{display:inline-block;font:.62rem 'DM Mono',monospace;padding:.12rem .5rem;border-radius:100px;background:rgba(var(--rgb),.15);color:var(--g);border:1px solid rgba(var(--rgb),.3)}
@@ -63,16 +63,32 @@ tr:last-child td{border-bottom:none}
 .q span{display:block;font:.66rem 'DM Mono',monospace;color:var(--g);margin-top:.5rem;font-style:normal;letter-spacing:.06em}
 .g5{display:grid;grid-template-columns:repeat(5,1fr);gap:.8rem;width:100%}
 @media(max-width:720px){.g5{grid-template-columns:1fr 1fr}}
+.hl,.q{border-left-color:var(--red)}
+.sn{position:fixed;top:-20px;color:#8ec5ea;opacity:.9;pointer-events:none;z-index:1;animation:sf linear infinite}
+@keyframes sf{to{transform:translate(var(--dx),110vh)}}
+.bb{position:fixed;bottom:-16px;border-radius:50%;border:1px solid rgba(201,150,43,.7);background:rgba(255,255,255,.5);pointer-events:none;z-index:1;animation:br linear infinite}
+@keyframes br{to{transform:translateY(-110vh);opacity:0}}
+#lt{position:fixed;top:3px;left:0;right:0;height:12px;z-index:99;background:radial-gradient(circle,#f0c75e 3px,transparent 4px) 0 0/54px 12px,radial-gradient(circle,#d12f45 3px,transparent 4px) 18px 0/54px 12px,radial-gradient(circle,#2fbf71 3px,transparent 4px) 36px 0/54px 12px;animation:tw 1.6s ease-in-out infinite alternate}
+@keyframes tw{from{opacity:.45}to{opacity:1}}
+.orn{font-size:2.2rem;letter-spacing:.6rem;margin-bottom:.8rem;animation:fl 3s ease-in-out infinite}
+@keyframes fl{50%{transform:translateY(-8px)}}
+.slide::after{position:absolute;bottom:1.2rem;left:2rem;font-size:1.5rem;opacity:.85;animation:fl 4s ease-in-out infinite}
+.slide:nth-of-type(odd)::after{content:'🎄'}.slide:nth-of-type(even)::after{content:'🥂'}
+.slide.a .g3>*:nth-child(2){animation-delay:.15s}.slide.a .g3>*:nth-child(3){animation-delay:.3s}.slide.a .g3>*:nth-child(4){animation-delay:.45s}.slide.a .g5>*:nth-child(2){animation-delay:.12s}.slide.a .g5>*:nth-child(3){animation-delay:.24s}.slide.a .g5>*:nth-child(4){animation-delay:.36s}.slide.a .g5>*:nth-child(5){animation-delay:.48s}
+.slide.a .g5>*,.slide.a .sl li{animation:f .55s ease both}
+.tag::before{content:'✦ '}
+.n{color:#2e8b57;border-color:#2e8b57}.ct::before{background:#2e8b57}.hl{background:rgba(46,139,87,.08)}
+#pb{background:linear-gradient(90deg,#c0273b,#e0a937,#2e8b57)}
 </style>
 </head>
 <body>
-<div id="pb"></div><div id="ct"></div>
+<div id="pb"></div><div id="lt"></div><div id="ct"></div>
 <button class="nb" id="bp" onclick="go(c-1)">&#8592;</button><button class="nb" id="bn" onclick="go(c+1)">&#8594;</button>
 <div id="dots"></div>
 <!-- 1 PORTADA -->
-<div class="slide a" style="background:radial-gradient(ellipse 60% 55% at 50% 40%,rgba(0,110,55,.3),transparent 70%),var(--bg)">
+<div class="slide a" style="background:radial-gradient(ellipse 60% 55% at 50% 40%,rgba(224,169,55,.28),transparent 70%),var(--bg)">
   <div class="wm"><img src="logo.png" alt="" style="height:500px;width:auto" onerror="this.style.display='none'"></div>
-  <span class="tag">Investigación de Mercados · 2026</span>
+  <span class="tag">Investigación de Mercados · 2026</span><div class="orn">🎄 🥂 🎁</div>
   <h1>El champán en <em>Nochebuena</em></h1>
   <p class="sub">Qué significa, cómo se elige y cómo se compra<br>Anfitriones de 20 a 75 años · NSE B y C · Zona 8 de Lima</p>
   <p class="mono" style="margin-top:1.6rem">Luis Huamayalli · Jonnathan Pedraza · Brian Tay · Leonardo Ccorahua</p>
@@ -82,11 +98,11 @@ tr:last-child td{border-bottom:none}
 <!-- 2 OBJETIVOS -->
 <div class="slide"><div class="cd">01 / OBJETIVOS</div>
   <div class="w"><span class="tag">Planteamiento</span><h2>Qué <em>queremos entender</em></h2>
-  <div class="card"><div class="ct">Objetivo general</div><p>Comprender las percepciones, motivaciones y factores que intervienen en la decisión de compra de champán o bebidas espumosas para la Nochebuena entre anfitriones de 20 a 75 años, de los NSE B y C, de la Zona 8 de Lima.</p></div>
+  <div class="card"><div class="ct">Objetivo general</div><p>Comprender las percepciones, motivaciones y factores que intervienen en la decisión de compra de champán o bebidas espumosas en Nochebuena entre anfitriones de 20 a 75 años, de los NSE B y C, de la Zona 8 de Lima.</p></div>
   <div class="g3" style="margin-top:1rem">
-  <div class="card"><div class="ct">Objetivo específico 1</div><p><strong>Significado:</strong> explorar los significados simbólicos, tradiciones y motivaciones emocionales del brindis con champán.</p></div>
-  <div class="card"><div class="ct">Objetivo específico 2</div><p><strong>Elección:</strong> identificar los factores y atributos que intervienen en la compra: marca, precio, botella y empaque.</p></div>
-  <div class="card"><div class="ct">Objetivo específico 3</div><p><strong>Compra:</strong> describir los hábitos de compra: canales, presupuesto y sustitutos.</p></div></div></div>
+  <div class="card"><div class="ct">Objetivo específico 1</div><p><strong>Significado:</strong> explorar significados, tradiciones y emociones del brindis.</p></div>
+  <div class="card"><div class="ct">Objetivo específico 2</div><p><strong>Elección:</strong> identificar qué atributos pesan: marca, precio, botella y empaque.</p></div>
+  <div class="card"><div class="ct">Objetivo específico 3</div><p><strong>Compra:</strong> describir canales, presupuesto y sustitutos.</p></div></div></div>
 </div>
 
 <!-- 2b GRUPO OBJETIVO -->
@@ -96,27 +112,27 @@ tr:last-child td{border-bottom:none}
   <li><span class="n">✓</span><span>Residentes en Surquillo, Barranco, Chorrillos y San Juan de Miraflores (<strong>Zona 8</strong>).</span></li>
   <li><span class="n">✓</span><span><strong>Anfitriones</strong> o responsables de comprar las bebidas de Nochebuena.</span></li>
   <li><span class="n">✓</span><span>Que <strong>compraron champán o espumante</strong> para esa cena.</span></li></ul></div>
-  <div><div class="card"><div class="ct">Método</div><p>Estudio cualitativo y exploratorio, en octubre de 2026 y de forma virtual: <strong>3 grupos de conversación</strong> (20–29, 30–39 y 40–49 años; 13 personas) y <strong>4 entrevistas en profundidad</strong> (una de 50–59 y tres de 60–75 años). En total, <strong>17 participantes</strong>.</p></div>
-  <div class="hl"><p>Busca entender motivos, no medir porcentajes. El segmento de 50–59 se apoya en un solo caso y los NSE B y C no se separaron.</p></div></div></div>
+  <div><div class="card"><div class="ct">Método</div><p>Cualitativo y exploratorio, octubre 2026, virtual: <strong>3 grupos</strong> (20–49 años; 13 personas) y <strong>4 entrevistas</strong> (50–75 años). <strong>17 participantes</strong>.</p></div>
+  <div class="hl"><p>Entiende motivos, no mide porcentajes; 50–59 años es un solo caso.</p></div></div></div>
 </div>
 
 <!-- 3 RESUMEN -->
 <div class="slide"><div class="cd">02 / HALLAZGOS</div>
   <div class="w"><span class="tag">Hallazgo principal</span><h2>Se brinda con el corazón, <em>se compra con la cabeza</em></h2>
   <div class="g3">
-  <div class="card"><div class="ct">Objetivo 1 · Se brinda por</div><p>Unión familiar, gratitud y recuerdo de los ausentes. El champán marca que el momento es especial.</p></div>
-  <div class="card"><div class="ct">Objetivo 2 · Se elige por</div><p>Sabor suave y ligeramente dulce, marca conocida y confianza. El empaque ayuda, pero no decide.</p></div>
-  <div class="card"><div class="ct">Objetivo 3 · Se compra en</div><p>Supermercados, de 3 a 7 días antes y junto con la cena, con miedo a lo adulterado.</p></div></div>
+  <div class="card"><div class="ct">Objetivo 1 · Se brinda por</div><p>Unión, gratitud y recuerdo de los ausentes.</p></div>
+  <div class="card"><div class="ct">Objetivo 2 · Se elige por</div><p>Sabor suave, marca conocida y confianza. El empaque no decide.</p></div>
+  <div class="card"><div class="ct">Objetivo 3 · Se compra en</div><p>Supermercados, 3 a 7 días antes, cuidando la autenticidad.</p></div></div>
   <div class="hl"><p>Nadie quiere arriesgar el brindis del 24 con una botella que no conoce.</p></div></div>
 </div>
 
 <!-- 4 SIGNIFICADO -->
 <div class="slide"><div class="cd">OBJETIVO 1 · SIGNIFICADO</div>
   <div class="g2"><div><span class="tag">Objetivo específico 1 · Significado</span><h2>El brindis une; el champán <em>lo hace especial</em></h2>
-  <ul class="sl"><li><span class="n">✓</span><span><strong>Unión y gratitud:</strong> es el punto más importante de la noche.</span></li>
-  <li><span class="n">✓</span><span><strong>Alegría y nostalgia:</strong> se celebra a los presentes y se recuerda a los ausentes.</span></li>
-  <li><span class="n">✓</span><span><strong>Ceremonia:</strong> el descorche, las burbujas y la copa lo diferencian de la cerveza.</span></li>
-  <li><span class="n">✓</span><span><strong>Inclusivo:</strong> lo pueden tomar adultos, jóvenes y niños.</span></li></ul></div>
+  <ul class="sl"><li><span class="n">✓</span><span><strong>Unión y gratitud:</strong> el centro de la noche.</span></li>
+  <li><span class="n">✓</span><span><strong>Alegría y nostalgia:</strong> presentes y ausentes.</span></li>
+  <li><span class="n">✓</span><span><strong>Ceremonia:</strong> descorche, burbujas y copa.</span></li>
+  <li><span class="n">✓</span><span><strong>Inclusivo:</strong> para todas las edades.</span></li></ul></div>
   <div><div class="q">«Para mí el champán simboliza éxito. Al descorcharlo con mi familia es como celebrar el éxito de tenernos reunidos.»<span>Zayda, 40–49 años</span></div>
   <div class="q" style="margin-top:1rem">«Lo que recuerdo es que él estaba allí.»<span>Elena, 60–75 años, sobre el regreso de su hijo (no recuerda qué bebieron)</span></div></div></div>
 </div>
@@ -130,16 +146,16 @@ tr:last-child td{border-bottom:none}
   <div class="card"><div class="ct">40–49</div><div class="big" style="font-size:1.5rem">Un viejo amigo</div><p>Éxito de reunir a la familia</p></div>
   <div class="card"><div class="ct">50–59</div><div class="big" style="font-size:1.5rem">Uno más</div><p>Costumbre que quiere mantener</p></div>
   <div class="card"><div class="ct">60–75</div><div class="big" style="font-size:1.5rem">Invitado</div><p>Agradable, pero reemplazable</p></div></div>
-  <div class="hl"><p>Entre 20 y 49 años es casi indispensable. En mayores de 60, que brindaban con sidra de niños, importa más la familia que la bebida.</p></div></div>
+  <div class="hl"><p>De 20 a 49 es casi indispensable; en mayores de 60 importa más la familia que la bebida.</p></div></div>
 </div>
 
 <!-- 6 ATRIBUTOS -->
 <div class="slide"><div class="cd">OBJETIVO 2 · ELECCIÓN</div>
   <div class="w"><span class="tag">Objetivo específico 2 · Elección</span><h2>Qué pesa al <em>elegir la botella</em></h2>
   <div class="g3" style="grid-template-columns:repeat(4,1fr)">
-  <div class="card"><div class="ct">1 · Sabor</div><p>Suave, ligeramente dulce, semiseco o rosé. Lo muy seco o ácido se rechaza.</p></div>
-  <div class="card"><div class="ct">2 · Marca y garantía</div><p>La marca conocida da seguridad. Desde los 40 preocupa la adulteración.</p></div>
-  <div class="card"><div class="ct">3 · Precio</div><p>Fija el rango; se paga más solo si la calidad se nota.</p></div>
+  <div class="card"><div class="ct">1 · Sabor</div><p>Suave, dulce moderado o rosé. Lo muy seco se rechaza.</p></div>
+  <div class="card"><div class="ct">2 · Marca y garantía</div><p>Da seguridad. Desde los 40 preocupa la adulteración.</p></div>
+  <div class="card"><div class="ct">3 · Precio</div><p>Fija el rango; se paga más si la calidad se nota.</p></div>
   <div class="card"><div class="ct">4 · Empaque</div><p>Suma, pero no decide. Gusta más para regalo.</p></div></div>
   <div class="q" style="margin-top:1rem">«Puede ser una botella muy linda, pero si es un champán horrible… de nada vale.»<span>Zayda, 40–49 años</span></div></div>
 </div>
@@ -148,18 +164,18 @@ tr:last-child td{border-bottom:none}
 <div class="slide"><div class="cd">OBJETIVO 2 · MARCAS NUEVAS</div>
   <div class="w"><span class="tag">Objetivo específico 2 · Marcas nuevas</span><h2>Cómo vencer el miedo <em>a probar algo nuevo</em></h2>
   <table><thead><tr><th>Edad</th><th>Qué los anima a probar</th><th>Qué hacen</th></tr></thead><tbody>
-  <tr><td>20–29</td><td>Diseño y edición navideña</td><td>Llevan una botella extra y mantienen su marca fija de respaldo</td></tr>
-  <tr><td>30–49</td><td>Degustación, prueba previa o recomendación</td><td>No arriesgan el 24 solo por un empaque bonito</td></tr>
-  <tr><td>60–75</td><td>Información verificable y recomendación de familiares</td><td>Estuches y cajas solo valen para regalo; en casa piden etiqueta clara, apertura fácil y botellas pequeñas</td></tr></tbody></table></div>
+  <tr><td>20–29</td><td>Diseño y edición navideña</td><td>Botella extra, con su marca fija de respaldo</td></tr>
+  <tr><td>30–49</td><td>Degustación, prueba previa o recomendación</td><td>No arriesgan el 24 por un empaque</td></tr>
+  <tr><td>60–75</td><td>Información verificable y recomendaciones</td><td>Estuches para regalo; en casa, etiqueta clara y botella pequeña</td></tr></tbody></table></div>
 </div>
 
 <!-- 8 COMPRA -->
 <div class="slide"><div class="cd">OBJETIVO 3 · COMPRA</div>
   <div class="g2"><div><span class="tag">Objetivo específico 3 · Compra</span><h2>Compra planificada, <em>en el súper</em></h2>
-  <ul class="sl"><li><span class="n">1</span><span><strong>Dónde:</strong> Plaza Vea, Metro y Tottus. Bodegas solo en emergencias; nadie compra por internet.</span></li>
-  <li><span class="n">2</span><span><strong>Cuándo:</strong> de 3 a 7 días antes, para evitar colas y alzas.</span></li>
-  <li><span class="n">3</span><span><strong>Si falta:</strong> vino semiseco y sidra; los jóvenes también cerveza o ron.</span></li>
-  <li><span class="n">4</span><span><strong>Pagar más:</strong> solo con mejor sabor y garantía, no por cajas decorativas.</span></li></ul></div>
+  <ul class="sl"><li><span class="n">1</span><span><strong>Dónde:</strong> Plaza Vea, Metro, Tottus; no por internet.</span></li>
+  <li><span class="n">2</span><span><strong>Cuándo:</strong> 3 a 7 días antes.</span></li>
+  <li><span class="n">3</span><span><strong>Si falta:</strong> vino semiseco o sidra.</span></li>
+  <li><span class="n">4</span><span><strong>Pagar más:</strong> solo por sabor y garantía.</span></li></ul></div>
   <div class="card"><div class="ct">Gasto por botella (S/)</div>
   <table><tbody><tr><td>20–29 años</td><td>60 a 130</td></tr><tr><td>30–39 años</td><td>40 a 60</td></tr><tr><td>40–49 años</td><td>50 a 100</td></tr><tr><td>50–59 años</td><td>cerca de 50</td></tr><tr><td>60–75 años</td><td>18 a 45</td></tr></tbody></table>
   <p style="margin-top:.6rem">Muchos compran 2 a 4 botellas: unos S/ 100 a 120 por noche.</p></div></div>
@@ -172,13 +188,13 @@ tr:last-child td{border-bottom:none}
   <div class="card"><div class="ct">Lo más repetido</div><p><strong>Significado:</strong> familia, momento, brindis.<br><strong>Elección:</strong> marca, botella, sabor, precio.<br><strong>Compra:</strong> soles, supermercado, vino.</p></div>
   <div class="card"><div class="ct">Tono del brindis</div><p>Dominan la <strong>alegría (33%)</strong> y la <strong>confianza (27%)</strong>; la tristeza o nostalgia pesa poco en las palabras (2%).</p></div>
   <div class="card"><div class="ct">Dónde hay cautela</div><p>Las expresiones de duda y riesgo («arriesgaría», «seco», «adulterados») se concentran al <strong>elegir la botella</strong>, no al hablar del brindis.</p></div></div>
-  <div class="hl"><p>Se analizaron las 7 transcripciones (unas 7 600 palabras). Es un apoyo para ilustrar: no reemplaza la lectura cualitativa. En la siguiente diapositiva, un modelo sencillo (Naive Bayes) ayuda a ubicar dónde se concentra la duda.</p></div></div>
+  <div class="hl"><p>Análisis de las 7 transcripciones: apoyo ilustrativo, no reemplaza lo cualitativo. Sigue un modelo sencillo (Naive Bayes).</p></div></div>
 </div>
 
 <!-- 9b NAIVE BAYES -->
 <div class="slide"><div class="cd">COMPLEMENTO · ANÁLISIS DE TEXTO</div>
   <div class="g2"><div><span class="tag">Modelo Naive Bayes</span><h2>¿Dónde se juega <em>la decisión?</em></h2>
-  <p>Entrenamos un clasificador sencillo para separar las frases <strong>festivas</strong> de las de <strong>cautela o riesgo</strong> («arriesgaría», «seco», «adulterados») y vimos en qué parte de la conversación aparecen más.</p>
+  <p>Un clasificador sencillo separó frases <strong>festivas</strong> de frases de <strong>cautela</strong> («arriesgaría», «seco», «adulterados») y mostró dónde aparecen.</p>
   <div class="hl"><p>La duda no está en el brindis, está en el momento de elegir la botella: ahí hay que poner la atención comercial.</p></div></div>
   <div class="card"><div class="ct">Frases con señal de cautela</div>
   <div class="bar"><span>Elegir la botella</span><i style="width:100%"></i><span>26%</span></div>
@@ -193,7 +209,7 @@ tr:last-child td{border-bottom:none}
 <!-- 11 CONCLUSIONES -->
 <div class="slide"><div class="cd">CONCLUSIONES</div>
   <div class="g2"><div><span class="tag">Conclusiones</span><h2>Ritual familiar, <em>decisión prudente</em></h2>
-  <p>El champán se consume para solemnizar el brindis y reunir generaciones, pero la botella se elige con cautela: sabor que agrade a todos, marca conocida y un súper que garantice autenticidad.</p></div>
+  <p>Se consume para solemnizar el brindis, pero se elige con cautela: buen sabor, marca conocida y canal seguro.</p></div>
   <ul class="sl"><li><span class="n">1</span><span><strong>Objetivo 1 · Significado:</strong> central de 20 a 49 años; prescindible en mayores de 60.</span></li>
   <li><span class="n">2</span><span><strong>Objetivo 2 · Elección:</strong> sabor y confianza primero; el empaque solo complementa.</span></li>
   <li><span class="n">3</span><span><strong>Objetivo 3 · Compra:</strong> presencial, anticipada y en supermercado; el vino y la sidra son su competencia.</span></li></ul></div>
@@ -203,15 +219,15 @@ tr:last-child td{border-bottom:none}
 <div class="slide"><div class="cd">RECOMENDACIONES</div>
   <div class="w"><span class="tag">Recomendaciones para el negocio</span><h2>Tres frentes <em>de acción</em></h2>
   <div class="g3">
-  <div class="card"><div class="ct">Producto</div><p>Escala de dulzor en la etiqueta (dulce, semiseco, seco). Estuche «listo para regalar» y, aparte, formato familiar sencillo, con botellas de 375–500 ml y corcho fácil.</p></div>
-  <div class="card"><div class="ct">Mensaje</div><p>«El invitado que une a todas las generaciones». Digital y estético para 20–39; garantía y tradición para mayores de 40.</p></div>
-  <div class="card"><div class="ct">Punto de venta</div><p>Degustaciones y exhibición junto a pavos y panetones, 4 a 7 días antes del 24. Packs duo entre S/ 80 y 120 y oferta principal de S/ 50 a 100.</p></div></div></div>
+  <div class="card"><div class="ct">Producto</div><p>Escala de dulzor en la etiqueta, estuche para regalo y botellas pequeñas con corcho fácil.</p></div>
+  <div class="card"><div class="ct">Mensaje</div><p>«El invitado que une a todas las generaciones»: estético para 20–39, garantía para 40+.</p></div>
+  <div class="card"><div class="ct">Punto de venta</div><p>Degustaciones y exhibición junto a pavos y panetones; packs duo de S/ 80–120.</p></div></div></div>
 </div>
 
 <!-- 12 FIN -->
-<div class="slide" style="background:radial-gradient(ellipse 70% 60% at 50% 50%,rgba(0,110,55,.25),transparent 70%),var(--bg)">
+<div class="slide" style="background:radial-gradient(ellipse 70% 60% at 50% 50%,rgba(224,169,55,.25),transparent 70%),var(--bg)">
   <div class="wm"><img src="logo.png" alt="" style="height:300px;width:auto" onerror="this.style.display='none'"></div>
-  <span class="tag">Fin</span><h1>Gracias por <em>su atención</em></h1><p class="sub">¿Consultas?</p>
+  <div class="orn">🍾 ✨ 🥂</div><span class="tag">Fin</span><h1>Gracias por <em>su atención</em></h1><p class="sub">¿Consultas?</p>
   <p class="mono" style="margin-top:1.6rem">Luis Huamayalli · Jonnathan Pedraza · Brian Tay · Leonardo Ccorahua</p>
 </div>
 
@@ -223,6 +239,8 @@ function ui(){ct.textContent=String(c+1).padStart(2,'0')+' / '+String(S.length).
 function go(n){if(n<0||n>=S.length)return;S[c].classList.remove('a');c=n;S[c].classList.add('a');ui()}
 document.addEventListener('keydown',e=>{if(e.key=='ArrowRight'||e.key==' ')go(c+1);if(e.key=='ArrowLeft')go(c-1)});
 ui();
+for(let i=0;i<34;i++){const e=document.createElement('div');e.className='sn';e.textContent='❄';e.style.cssText=`left:${Math.random()*100}vw;font-size:${8+Math.random()*12}px;animation-duration:${8+Math.random()*10}s;animation-delay:-${Math.random()*14}s;--dx:${Math.random()*80-40}px`;document.body.appendChild(e)}
+for(let i=0;i<26;i++){const e=document.createElement('div'),z=4+Math.random()*10;e.className='bb';e.style.cssText=`left:${Math.random()*100}vw;width:${z}px;height:${z}px;animation-duration:${6+Math.random()*8}s;animation-delay:-${Math.random()*10}s`;document.body.appendChild(e)}
 </script>
 </body>
 </html>
