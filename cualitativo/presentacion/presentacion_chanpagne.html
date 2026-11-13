@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Champán en Nochebuena · Investigación de Mercados 2026</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600;1,700&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#fffaf0;--g:#c0273b;--g2:#e0a937;--gl:#2e8b57;--cream:#1d3a2b;--dim:#52665a;--rgb:192,39,59;--red:#c0273b}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -68,7 +68,7 @@ tr:last-child td{border-bottom:none}
 @keyframes sf{to{transform:translate(var(--dx),110vh)}}
 .bb{position:fixed;bottom:-16px;border-radius:50%;border:1px solid rgba(201,150,43,.7);background:rgba(255,255,255,.5);pointer-events:none;z-index:1;animation:br linear infinite}
 @keyframes br{to{transform:translateY(-110vh);opacity:0}}
-#lt{position:fixed;top:3px;left:0;right:0;height:12px;z-index:99;background:radial-gradient(circle,#f0c75e 3px,transparent 4px) 0 0/54px 12px,radial-gradient(circle,#d12f45 3px,transparent 4px) 18px 0/54px 12px,radial-gradient(circle,#2fbf71 3px,transparent 4px) 36px 0/54px 12px;animation:tw 1.6s ease-in-out infinite alternate}
+#lt{position:fixed;top:3px;left:0;right:0;height:16px;z-index:99;background:radial-gradient(circle,#f0c75e 4.5px,transparent 5.5px) 0 0/54px 16px,radial-gradient(circle,#d12f45 4.5px,transparent 5.5px) 18px 0/54px 16px,radial-gradient(circle,#2fbf71 4.5px,transparent 5.5px) 36px 0/54px 16px;animation:tw 1.6s ease-in-out infinite alternate}
 @keyframes tw{from{opacity:.45}to{opacity:1}}
 .orn{font-size:2.2rem;letter-spacing:.6rem;margin-bottom:.8rem;animation:fl 3s ease-in-out infinite}
 @keyframes fl{50%{transform:translateY(-8px)}}
@@ -79,6 +79,25 @@ tr:last-child td{border-bottom:none}
 .tag::before{content:'✦ '}
 .n{color:#2e8b57;border-color:#2e8b57}.ct::before{background:#2e8b57}.hl{background:rgba(46,139,87,.08)}
 #pb{background:linear-gradient(90deg,#c0273b,#e0a937,#2e8b57)}
+p,li{font-size:clamp(.92rem,1.5vw,1.1rem);font-weight:500;color:#34493c}
+strong{font-weight:700}h1,h2{font-weight:700}.sub{font-weight:600}
+table{font-size:clamp(.82rem,1.25vw,.98rem)}
+td{font-weight:500;color:#34493c;border-bottom:2px solid rgba(0,0,0,.1)}
+th{font-weight:500;border-bottom:3px solid var(--g);font-size:.72rem}
+.tag{border-width:2px;font-weight:500;background:rgba(224,169,55,.18);font-size:.72rem}
+.ct,.mono,.bar,.cd,#ct{font-weight:500}.ct{font-size:.78rem}
+.card{border-width:2px;border-top:6px solid var(--g2);box-shadow:0 8px 22px rgba(120,60,40,.16)}
+.g3>.card:nth-child(3n+1),.g2>.card:nth-child(odd){border-top-color:#c0273b}
+.g3>.card:nth-child(3n+2),.g5>.card:nth-child(odd){border-top-color:#2e8b57}
+.hl{border-left-width:6px}.q{border-left-width:6px;font-weight:600}
+.q::before{content:'“';display:block;font-size:3rem;line-height:.6;color:var(--g2)}
+.n{border-width:2px;font-weight:500;width:1.9rem;height:1.9rem;background:#fff}
+.nb{border-width:2px;opacity:.85;background:#fff}
+.bar i{height:17px}.rg,.rg i{height:17px}.dot{width:8px;height:8px}#pb{height:5px}
+h2 em{text-decoration:underline 4px var(--g2);text-underline-offset:7px}
+.slide::after{font-size:2rem;opacity:1}
+.dc{position:fixed;z-index:2;pointer-events:none;animation:fl 3.5s ease-in-out infinite}
+@media(max-width:720px){.dc{display:none}}
 </style>
 </head>
 <body>
@@ -241,6 +260,8 @@ document.addEventListener('keydown',e=>{if(e.key=='ArrowRight'||e.key==' ')go(c+
 ui();
 for(let i=0;i<34;i++){const e=document.createElement('div');e.className='sn';e.textContent='❄';e.style.cssText=`left:${Math.random()*100}vw;font-size:${8+Math.random()*12}px;animation-duration:${8+Math.random()*10}s;animation-delay:-${Math.random()*14}s;--dx:${Math.random()*80-40}px`;document.body.appendChild(e)}
 for(let i=0;i<26;i++){const e=document.createElement('div'),z=4+Math.random()*10;e.className='bb';e.style.cssText=`left:${Math.random()*100}vw;width:${z}px;height:${z}px;animation-duration:${6+Math.random()*8}s;animation-delay:-${Math.random()*10}s`;document.body.appendChild(e)}
+const ic=['🎁','🔔','⭐','🍾','🎄','🥂','🍬','🎀'];
+for(let i=0;i<8;i++){const e=document.createElement('div');e.className='dc';e.textContent=ic[i];e.style.cssText=`${i%2?'right':'left'}:${.8+Math.random()*1.4}vw;top:${[8,22,64,78][i>>1]}vh;font-size:${1.7+Math.random()*.9}rem;animation-delay:-${Math.random()*3}s`;document.body.appendChild(e)}
 </script>
 </body>
 </html>
